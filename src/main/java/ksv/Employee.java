@@ -1,6 +1,6 @@
 package ksv;
 
-public abstract class Employee implements Comparable<Employee> {
+public abstract class Employee  {
 
     protected String name;
     protected String surname;

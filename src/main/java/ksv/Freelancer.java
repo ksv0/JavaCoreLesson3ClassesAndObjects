@@ -1,6 +1,6 @@
 package ksv;
 
-public class Freelancer extends Employee {
+public class Freelancer extends Employee implements Comparable<Employee> {
     private int rate;
 
     @Override
@@ -26,9 +26,6 @@ public class Freelancer extends Employee {
 
     @Override
     public int compareTo(Employee o) {
-//        if (o instanceof Freelancer) {
-//            return rate - ((Freelancer) o).getRate();
-//        }
         return age - o.getAge();
     }
 
